@@ -1,4 +1,4 @@
-﻿# SAÉ-2026-2027
+﻿# SAÉ 2026-2027 Développement Application (IN3SA01)
  
 ANDRÉ Lou-anh
 LAPERS Rose
@@ -7,8 +7,8 @@ KHAMPRASONG Enzo
 MEIRA Alexandre
 INF2-B
 
-Dans le cadre de la SAÉ, nous avons créer un site de jeux qui comporte plusieurs module de jeux, 
-ainsi que la possibilité de s'authentifier afin de bénéficier de fonctionnalités spécifiques en 
+Dans le cadre de la SAÉ, les professeurs nous ont demandé de créer un site de jeux pour la journée d'intégration des futurs premières années.
+Pour ce faire nous devons créer un site de jeux qui comporte plusieurs module de jeux, ainsi que la possibilité de s'authentifier afin de bénéficier de fonctionnalités spécifiques en 
 fonction du rôle/statut.
 
 Le site est composé de plusieurs pages : 
