@@ -21,21 +21,6 @@ Le projet présente le parcours principal d'un joueur : consultation de la plate
 - HTML
 - CSS
 
-## Arborescence du projet
-
-maquette-sae3/
-├── index.html
-├── connexion.html
-├── jeux.html
-├── css/
-│   └── style.css
-├── fonts/
-│   ├── BloggerSans-Italic.otf
-│   └── ComputerSpeakv03Regular.ttf
-├── logo/
-│   └── logo-gaming-5-membres.png
-└── README.md
-
 ## Lancer le projet
 
 1. Télécharger ou cloner le dépôt.
