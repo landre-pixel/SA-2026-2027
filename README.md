@@ -1,21 +1,67 @@
-﻿# SAÉ 2026-2027 Développement Application (IN3SA01)
- 
-ANDRÉ Lou-anh
-LAPERS Rose
-SIMON Raphael
-KHAMPRASONG Enzo
-MEIRA Alexandre
-INF2-B
+# SmartGames - SAE 3 BUT Informatique
 
-Dans le cadre de la SAÉ, les professeurs nous ont demandé de créer un site de jeux pour la journée d'intégration des futurs premières années.
-Pour ce faire nous devons créer un site de jeux qui comporte plusieurs module de jeux, ainsi que la possibilité de s'authentifier afin de bénéficier de fonctionnalités spécifiques en 
-fonction du rôle/statut.
+## Présentation
 
-Le site est composé de plusieurs pages : 
-- index.html : la page d'accueil du site, elle contient un accès à tous les jeux et à la page d'authentification
-- authentification.html : cette page permet à l'utilisateur de se connecter
-- formulaire.html : contient le formulaire de connexion
-- module1.html : page du premier jeux/module
-- style.css : page de style du site
+SmartGames est une maquette statique d'une plateforme de jeux et de défis réalisée dans le cadre de la SAE 3 du BUT Informatique.
 
-à compléter     
+Le projet présente le parcours principal d'un joueur : consultation de la plateforme, connexion, puis accès à un module de jeu.
+
+## Fonctionnalités de la maquette
+
+- Page d'accueil avec présentation de la plateforme.
+- Affichage de plusieurs modules de jeux.
+- Page de connexion fictive.
+- Redirection fictive vers un module de jeu.
+- Zone réservée au futur contenu du jeu.
+- Affichage d'un résultat fictif.
+- Interface adaptée aux téléphones et aux ordinateurs.
+
+## Technologies utilisées
+
+- HTML
+- CSS
+
+## Arborescence du projet
+
+maquette-sae3/
+├── index.html
+├── connexion.html
+├── jeux.html
+├── css/
+│   └── style.css
+├── fonts/
+│   ├── BloggerSans-Italic.otf
+│   └── ComputerSpeakv03Regular.ttf
+├── logo/
+│   └── logo-gaming-5-membres.png
+└── README.md
+
+## Lancer le projet
+
+1. Télécharger ou cloner le dépôt.
+2. Ouvrir le fichier `index.html` dans un navigateur web.
+
+Aucun serveur, compte utilisateur ou base de données n'est nécessaire pour cette maquette.
+
+## Navigation
+
+Accueil → Connexion → Jeu 1
+
+
+La connexion est volontairement simulée : le bouton de connexion redirige vers la page `jeux.html`.
+
+## Membres du groupe
+
+- ANDRE Lou-Anh
+- SIMON Raphael
+- KHAMPRASONG Enzo
+- LAPERS Alexandre
+- MEIRA Alexandre
+
+## Évolutions prévues
+
+- Ajout des vrais jeux et de leurs règles.
+- Création d'une base de données.
+- Authentification réelle des utilisateurs.
+- Gestion des profils joueurs.
+- Affichage des scores et des résultats.

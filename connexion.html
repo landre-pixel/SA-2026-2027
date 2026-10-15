@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-connexion">
+<header class="entete">
+    <a class="logo" href="index.html" aria-label="Retour à l'accueil">
+        <img class="logo-image" src="logo/logo.png" alt="Logo SmartGames">
+        <span>SmartGames</span>
+    </a>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#jeux">Jeux</a>
+    </nav>
+</header>
+
+<main class="zone-connexion">
+    <section class="carte-connexion">
+        <a class="retour" href="index.html">← Retour à l'accueil</a>
+        <p class="sur-titre">Espace joueur</p>
+        <h1>Bienvenue !</h1>
+        <p>Connectez-vous pour accéder aux jeux et reprendre vos défis.</p>
+
+        <form action="jeux.html">
+            <label for="identifiant">Identifiant</label>
+            <input id="identifiant" name="identifiant" type="text" placeholder="ex: 22..." required>
+
+            <label for="mot-de-passe">Mot de passe</label>
+            <input id="mot-de-passe" name="mot-de-passe" type="password" placeholder="Votre mot de passe" required>
+
+            <button class="bouton bouton-primaire bouton-large" type="submit">Se connecter</button>
+        </form>
+
+
+        <p class="note-maquette">Maquette statique : la connexion redirige directement vers un module.</p>
+    </section>
+</main>
+
+<footer>
+    <p>SmartGames - SAE 3 BUT Informatique</p>
+    <a href="index.html">Retour à l'accueil</a>
+</footer>
+</body>
+</html>
