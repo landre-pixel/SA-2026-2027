@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - SmartGames</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="entete">
+    <a class="logo" href="index.html">
+        <img class="logo-image" src="logo/logo.png" alt="Logo SmartGames">
+        <span>SmartGames</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="jeux.html">Jeux</a>
+        <a class="bouton bouton-secondaire" href="connexion.html">Déconnexion</a>
+        <a class="bouton bouton-profil" href="profil.html">Profil</a>
+    </nav>
+</header>
+
+<main class="page-profil">
+    <div class="fil-ariane">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        Profil
+    </div>
+
+    <section class="banniere-profil">
+        <div class="avatar-profil">E</div>
+
+        <div>
+            <p class="sur-titre">Espace joueur</p>
+            <h1>Bonjour etudiant01 !</h1>
+            <p>Prêt à relever un nouveau défi sur SmartGames ?</p>
+        </div>
+    </section>
+
+    <section class="statistiques">
+        <article>
+            <strong>3</strong>
+            <span>Jeux disponibles</span>
+        </article>
+
+        <article>
+            <strong>2</strong>
+            <span>Parties terminées</span>
+        </article>
+
+        <article>
+            <strong>1</strong>
+            <span>Jeu en cours</span>
+        </article>
+    </section>
+
+    <div class="contenu-profil">
+        <section class="carte-profil carte-informations">
+            <div class="titre-carte">
+                <h2>Mes informations</h2>
+                <span class="badge-joueur">Joueur inscrit</span>
+            </div>
+
+            <dl>
+                <div>
+                    <dt>Nom d'utilisateur</dt>
+                    <dd>etudiant01</dd>
+                </div>
+
+                <div>
+                    <dt>Adresse e-mail</dt>
+                    <dd>etudiant01@smartgames.fr</dd>
+                </div>
+
+                <div>
+                    <dt>Inscription</dt>
+                    <dd>Octobre 2026</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="carte-profil carte-securite">
+            <h2>Sécurité du compte</h2>
+            <p>Votre mot de passe peut être modifié à tout moment.</p>
+            <a class="bouton bouton-profil" href="#mot-de-passe">
+                Modifier mon mot de passe
+            </a>
+        </section>
+
+        <section class="carte-profil jeux-recents">
+            <div class="titre-carte">
+                <h2>Jeux récemment joués</h2>
+                <a href="jeux.html">Voir les jeux</a>
+            </div>
+
+            <article class="ligne-jeu">
+                <span class="pastille pastille-bleue">1</span>
+                <div>
+                    <strong>Jeu 1</strong>
+                    <small>Dernière partie : aujourd'hui</small>
+                </div>
+                <span class="etat etat-cours">En cours</span>
+            </article>
+
+            <article class="ligne-jeu">
+                <span class="pastille pastille-jaune">2</span>
+                <div>
+                    <strong>Jeu 2</strong>
+                    <small>Dernière partie : hier</small>
+                </div>
+                <span class="etat etat-termine">Terminé</span>
+            </article>
+
+            <article class="ligne-jeu">
+                <span class="pastille pastille-rose">3</span>
+                <div>
+                    <strong>Jeu 3</strong>
+                    <small>Aucune partie commencée</small>
+                </div>
+                <span class="etat etat-nouveau">Nouveau</span>
+            </article>
+        </section>
+
+        <section class="carte-profil modification-mdp" id="mot-de-passe">
+            <h2>Modifier mon mot de passe</h2>
+            <p>Pour sécuriser votre compte, saisissez votre ancien puis votre nouveau mot de passe.</p>
+
+            <form action="#confirmation">
+                <label for="ancien-mdp">Ancien mot de passe</label>
+                <input id="ancien-mdp" type="password" placeholder="Ancien mot de passe" required>
+
+                <label for="nouveau-mdp">Nouveau mot de passe</label>
+                <input id="nouveau-mdp" type="password" placeholder="Nouveau mot de passe" required>
+
+                <label for="confirmation-mdp">Confirmer le nouveau mot de passe</label>
+                <input id="confirmation-mdp" type="password" placeholder="Confirmer le mot de passe" required>
+
+                <button class="bouton bouton-primaire bouton-large" type="submit">
+                    Enregistrer les modifications
+                </button>
+            </form>
+
+            <p class="confirmation-mdp" id="confirmation">
+                Mot de passe modifié avec succès !
+            </p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>SmartGames - SAE 3 BUT Informatique</p>
+    <a href="index.html">Accueil</a>
+</footer>
+</body>
+</html>
