@@ -40,7 +40,7 @@ La connexion est volontairement simulée : le bouton de connexion redirige vers 
 - ANDRE Lou-Anh
 - SIMON Raphael
 - KHAMPRASONG Enzo
-- LAPERS Alexandre
+- LAPERS Rose
 - MEIRA Alexandre
 
 ## Évolutions prévues
