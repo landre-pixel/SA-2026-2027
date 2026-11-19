@@ -42,13 +42,13 @@
 
           if (isset($_GET['error'])) {
             if ($_GET['error'] == 1) {
-              echo "Erreur : login ou mot de passe incorrect";
+              echo "<p class='error-message'> Erreur : login ou mot de passe incorrect";
             }
             if ($_GET['error'] == 2) {
-              echo "Erreur :vous devez compléter le formulaire";
+              echo "<p class='error-message'> Erreur :vous devez compléter le formulaire";
             }
             if ($_GET['error'] == 3) {
-              echo "Erreur : échec de la connexion à la base de données";
+              echo "<p class='error-message'> Erreur : échec de la connexion à la base de données";
             }
           }
         ?>

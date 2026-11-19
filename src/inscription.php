@@ -52,19 +52,19 @@
         <?php
         if (isset($_GET['error'])) {
             if ($_GET['error'] == 1) {
-                echo "<p>Erreur : les mots de passe ne correspondent pas.</p>";
+                echo "<p class='error-message'> Erreur : les mots de passe ne correspondent pas.</p>";
             }
             if ($_GET['error'] == 2) {
-                echo "<p>Erreur : ce nom d'utilisateur est déjà utilisé.</p>";
+                echo "<p class='error-message'> Erreur : ce nom d'utilisateur est déjà utilisé.</p>";
             }
             if ($_GET['error'] == 3) {
-                echo "<p>Erreur : échec de la connexion à la base de données.</p>";
+                echo "<p class='error-message'> Erreur : échec de la connexion à la base de données.</p>";
             }
             if ($_GET['error'] == 4) {
-                echo "<p>Erreur : veuillez compléter le formulaire.</p>";
+                echo "<p class='error-message'> Erreur : veuillez compléter le formulaire.</p>";
             }
             if ($_GET['error'] == "caracteres") {
-                echo "<p>Erreur : caractères non autorisés ou longueur invalide.</p>";
+                echo "<p class='error-message'> Erreur : caractères non autorisés ou longueur invalide.</p>";
             }
         }
         ?>

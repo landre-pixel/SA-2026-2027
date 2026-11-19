@@ -6,6 +6,10 @@
     --texte:#1d2633;--secondaire:#5e6875;--fond:#f8f9fc;
     --bordure:#dde3eb;--blanc:#fff
 }
+.error-message {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
 
 *{box-sizing:border-box}
 body{margin:0;background:var(--fond);color:var(--texte);font:italic 16px/1.5 "Blogger Sans",Arial,sans-serif}
