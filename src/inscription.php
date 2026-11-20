@@ -29,11 +29,9 @@
         <p>Inscrivez-vous pour accéder aux jeux et sauvegarder votre progression.</p>
 
         <form action="action_inscription.php" method="post">
-            <label for="nouvel-identifiant">Nom d'utilisateur</label>
-            <input name="login" id="nouvel-identifiant" type="text" placeholder="ex. etudiant01" required>
-            <p class="indication">
-                3 à 20 caractères : lettres ( a-z, A-Z ), chiffres ( 0-9 ), tiret et underscore ( _ ).
-            </p>
+            <label for="nouvel-identifiant">Adresse e-mail</label>
+            <input name="login" id="nouvel-identifiant" type="email" placeholder="ex. etudiant01@gmail.com" required>
+
 
             <label for="mdp-inscription">Mot de passe</label>
             <input name="password" id="mdp-inscription" type="password" placeholder="Choisir un mot de passe" required>
@@ -55,7 +53,7 @@
                 echo "<p class='error-message'> Erreur : les mots de passe ne correspondent pas.</p>";
             }
             if ($_GET['error'] == 2) {
-                echo "<p class='error-message'> Erreur : ce nom d'utilisateur est déjà utilisé.</p>";
+                echo "<p class='error-message'> Erreur : cette adresse e-mail est déjà utilisée, veuillez-vous connecter.</p>";
             }
             if ($_GET['error'] == 3) {
                 echo "<p class='error-message'> Erreur : échec de la connexion à la base de données.</p>";
@@ -64,7 +62,10 @@
                 echo "<p class='error-message'> Erreur : veuillez compléter le formulaire.</p>";
             }
             if ($_GET['error'] == "caracteres") {
-                echo "<p class='error-message'> Erreur : caractères non autorisés ou longueur invalide.</p>";
+                echo "<p class='error-message'> veuillez saisir une adresse e-mail valide.</p>";
+            }
+            if ($_GET['error'] == 5) {
+                echo "<p class='error-message'>Erreur : mot de passe invalide ou longueur incorrecte.</p>";
             }
         }
         ?>

@@ -7,13 +7,13 @@ require("fonctions.php");
 if (isset($_POST["login"], $_POST["password"], $_POST["password_confirm"])) {
     $login = $_POST["login"];
 
-    if (!preg_match("/^[a-zA-Z0-9_-]{3,20}$/", $login)) {
+    if (!filter_var($login,FILTER_VALIDATE_EMAIL)) {
         header("Location: inscription.php?error=caracteres");
         exit();
     }
 
     if (!preg_match("/^[a-zA-Z0-9!@#$%&*_-]{8,50}$/", $_POST["password"])) {
-        header("Location: inscription.php?error=caracteres");
+        header("Location: inscription.php?error=5");
         exit();
     }
     $password = md5($_POST["password"]);

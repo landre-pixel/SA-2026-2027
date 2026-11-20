@@ -30,7 +30,7 @@
       <?php
       echo "<form action='action_connexion.php' method='post'>
             <label for='identifiant'>Identifiant</label>
-            <input name= 'login' id='identifiant' type='text' placeholder='ex. etudiant01' required>
+            <input name= 'login' id='identifiant' type='text' placeholder='Adresse e-mail ou id admin' required>
 
             <label for='mot-de-passe'>Mot de passe</label>
             <input name='password' id='mot-de-passe' type='password' placeholder='Votre mot de passe' required>
