@@ -1,7 +1,11 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["login"]) || $_SESSION["role"] != "joueur") {
+if (!isset($_SESSION["login"]) ||
+        !isset($_SESSION["role"]) ||
+        ($_SESSION["role"] != "joueur" &&
+                $_SESSION["role"] != "adminweb" &&
+                $_SESSION["role"] != "adminsys")) {
     header("Location: connexion.php");
     exit();
 }
