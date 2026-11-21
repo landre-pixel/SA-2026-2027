@@ -82,7 +82,16 @@ $login = htmlspecialchars($_SESSION["login"], ENT_QUOTES, "UTF-8");
 
                 <div>
                     <dt>Inscription</dt>
-                    <dd>Octobre 2026</dd>
+                    <dd><?php
+                        $mois = [
+                                1 => "Janvier", 2 => "Février", 3 => "Mars",
+                                4 => "Avril", 5 => "Mai", 6 => "Juin",
+                                7 => "Juillet", 8 => "Août", 9 => "Septembre",
+                                10 => "Octobre", 11 => "Novembre", 12 => "Décembre"
+                        ];
+
+                        echo $mois[(int)date("n")] . " " . date("Y");
+                        ?></dd>
                 </div>
             </dl>
         </section>
